@@ -1,0 +1,359 @@
+html {
+    background-color: #ccc;
+    background-image: linear-gradient(to bottom right, #0ca1ac, #000);
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    min-height: 100vh;
+    min-width: 300px;
+    overflow-x: hidden;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+a {
+    color: currentColor;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.social {
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+.social li {
+        height: 2rem;
+        margin-right: 0.5rem;
+        text-align: center;
+        width: 2rem;
+        list-style-type: none;
+    }
+
+.social a {
+        align-items: center;
+        display: flex;
+        font-size: 1.5rem;
+        height: 2rem;
+        justify-content: center;
+        opacity: 0.5;
+        transition-property: opacity, transform;
+        width: 2rem;
+        will-change: opacity, transform;
+    }
+
+.social a:hover {
+            opacity: 1;
+            transform: scale(1.25);
+        }
+
+.social a:active {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+
+
+
+/* 2. Shared */
+
+wallpaper,
+.picture-shadow,
+.picture-image {
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.job,
+.button,
+.button2
+{
+    font-family: "Montserrat", "Quicksand", sans-serif;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.button,
+
+.social a {
+    transform-origin: center;
+    transition-duration: 100ms;
+}/* 3. Specific */
+
+
+.wallpaper {
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-image: url("../images/gameofthrones.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.2;
+    position: fixed;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    background-size:cover;
+}
+
+.content {
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+}
+
+.side {
+    max-height: 25rem;
+    max-width: 25rem;
+}
+
+.about {
+    max-width: 26rem;
+}
+
+.picture {
+    padding-top: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.picture-shadow {
+    border-radius: 290486px;
+    background-image: radial-gradient(#000 0%, rgba(0, 0, 0, 0) 70%);
+    position: absolute;
+    top: 10%;
+}
+
+.picture-image {
+    border-radius: 290486px;
+    position: absolute;
+}
+
+job {
+    color: #ffe479;
+    font-size: 0.75rem;
+}
+
+.button {
+    background-color: #fff;
+    border-radius: 290486px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    color: #9013fe;
+    display: inline-block;
+    font-size: 0.875rem;
+    line-height: 1;
+    padding: 1.25em 2em;
+    text-shadow: none;
+    transition-property: box-shadow, transform;
+    user-select: none;
+    vertical-align: top;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+}
+
+.button:hover {
+        box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+        transform: scale(1.02) translateY(-4px);
+    }
+
+button:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    transform: scale(0.98) translateY(-2px);
+}
+
+/* 4. Responsiveness */
+    @media screen and (max-width: 799px) {
+.content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem 3rem;
+    }
+
+.side {
+        margin-bottom: 3rem;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .content {
+        align-items: center;
+        justify-content: space-around;
+        justify-content: space-evenly;
+        padding: 4rem;
+    }
+
+    .side {
+        flex-grow: 0;
+        flex-shrink: 0;
+        height: 20rem;
+        margin-left: 4rem;
+        order: 2;
+        width: 20rem;
+    }
+
+    .about {
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+}
+
+.name {
+    font-size: 2.25rem;
+    line-height: 1.125;
+    margin-bottom: 0.5rem;
+    
+}
+
+hr {
+    background-color: #ffe479;
+    border: none;
+    content: "";
+    height: 1px;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    transform-origin: center left;
+    width: 4rem;
+}
+
+.description {
+    font-size: 1.5rem;
+}
+
+.contact {
+    display: inline-block;
+    margin-top: 1.5rem;
+    vertical-align: top;
+}
+
+.contact {
+    display: inline-block;
+    margin-top: 1.5rem;
+    vertical-align: top;
+}
+
+.navigation {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: #c4eded;
+    overflow: hidden;
+}
+
+.navigation .navigationLI {
+        float: left;
+        display: inline;
+        margin-right: 40px;
+    }
+
+.navigation .navigationLI a {
+            display: block;
+            color: #000;
+            text-align: center;
+            padding 14px 16px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-family: "Monserrat", "Quicksand", sans-serif;
+            padding: 10px 15px;
+            word-wrap: normal;
+            display: inline-block;
+            color: black;
+            font-weight: bold;
+        }
+
+.navigation li:hover {
+            background-color: #ffffff;
+        }
+
+.activea {
+    background-color: #d3caa5;
+}
+
+
+.atlanta {
+    position: absolute;
+    top: 0px;
+    height: 1100px;
+    width: 1200px;
+    z-index: -0;
+}
+
+input, textarea, button, select {
+    position: relative;
+    z-index: 1;
+}
+
+input, textarea, textarea, button, select {
+    padding: 10px 5px 10px 3px;
+    background-color: lightskyblue;
+    display: inline:block;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.vrh {
+    text-align:center;
+}
+
+.content2 {
+     
+    min-height: 100vh;
+}
+
+nav {
+    margin-top: 14px;
+    margin-left: 50px;
+}
+
+fieldset {
+    border: 1px solid rgb(255,232,57);
+    width: 600x;
+    margin: 0 auto;
+}
+
+label {
+    display: inline-block;
+    width: 10%;
+    cursor: default;
+    white-space: nowrap;
+}
+
+.unesite {
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px;
+}
+
+a {
+    color: aqua;
+    position: relative;
+    z-index: 1;
+}
+
+.povratak {
+    text-align:center;
+}
+
+
+
+.button2:hover {
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    transform: scale(1.02) translateY(-4px);
+}
+
+button2:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    transform: scale(0.98) translateY(-2px);
+}

@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Premijera Igre prijestolja</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.jpg" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/minireset.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/animation.css">
+    <script defer type="text/javascript" src="js/main.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+</head>
+<body>
+
+    <div id="wallpaper" class="wallpaper" data-image="images/gameofthrones.jpg">></div>
+
+
+
+
+
+    <div class="content2">
+
+        <aside class="atlanta">
+            <header id="vrh">
+                <nav>
+                    <ul class="navigation">
+                        <li class="navigationLI"><a href="index.html">Početna</a></li>
+                        <li class="navigationLI"><a class="activea" href="registracija.html">Registracija</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </aside>
+        <br />
+
+        <h1 class="vrh">Registracija</h1>
+        <br />
+
+        <div class="myform">
+            <p class="unesite">Unesite osobne podatke kako bi vas obavijestili o novostima vezanih za seriju:</p>
+            <form action="/action_page.php" method="get">
+                <fieldset>
+                    <legend class="racun"> Prijava</legend>
+                    <label for="ime"> Ime:</label><input type="text" id="ime" name="ime" maxlength="15" placeholder="xxxxx" required><br />
+                    <label for="prezime">Prezime:</label><input type="text" id="prezime" name="prezime" maxlength="20" placeholder="xxxxx" required><br>
+                    <label for="lozinka">Lozinka:</label><input type="password" id="lozinka" name="lozinka" maxlength="20" min="6" required /><br />
+                    <label for="mail">E-mail: </label> <input type="email" id="mail" name="mail" placeholder="xxxxx@gmail.com" required /><br />
+					<label for="godine">Godine:</label><input type="number" id="dob" name="godine" min="1" max="100" required /><br />
+                    <label for="rodjenje"> Datum rođenja:</label> <input type="date" name="rodjenje" min="1900/01/01" max="2050-12-31" />
+					<br />Spol: <br />
+
+                    <input type="radio" id="m" name="spol" value="m" />
+                    <label for="m">muško</label><br />
+                    <input type="radio" id="f" name="spol" value="f" />
+                    <label for="m">žensko</label> <br />
+                    <input type="radio" id="n" name="spol" value="n" />
+                    <label for="m">ne želim odabrati</label> <br />
+                    <input type="checkbox" id="obavjesti" name="obavijesti" value="da" /><label for="obavjesti">Da, želim primati obavijesti.</label> <br />
+
+                    Sto mislite u kojoj drzavi ce biti premijera? <br />
+
+                    <select name="odgovor">
+                        <option value="prazno" hidden>-</option>
+                        <option value="Francuskoj">francuskoj</option>
+                        <option value="Njemackoj">njemackoj</option>
+                        <option value="Hrvatskoj">hrvatskoj</option>
+                        <option value="Americi">americi</option>
+                    </select>
+                    <br />
+
+                    <p class="unesite">Ostavite nam komentar</p> <br />
+                    <textarea name="dodatno" maxlength="500"></textarea>
+
+                    <br />
+                    <br />
+
+                    <button class="button2" type="submit" style="vertical-align:middle"><span>Potvrdite </span></button>  
+
+                </fieldset>
+            </form>
+
+			<button class="button2" type="submit" value="Pozdravi ekipu!" onclick="pozdraviEkipu()">Pozdravi ekipu</button>
+
+        </div>
+
+        <br />
+
+        <footer>
+            <p class="povratak">Povratak na <a href="#vrh">vrh stranice</a>.</p>
+        </footer>
+
+    </div>
+        
+
+
+</body>
+</html>
